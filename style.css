@@ -30,14 +30,47 @@ nav a:hover {
     color: #fff;
 }
 
+main{
+    margin:auto;
+}
+
+#About{
+    display:flex;
+}
+
 .hero{
-    height: 200px;
+    height: 400px;
+    margin:auto;
+}
+
+.about_text{
+    margin: 5%;
+    text-align: center;
+}
+
+#Work{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    min-width: none;
+}
+
+.project{
+    margin:0 5%;
 }
 
 .projectimg{
     height: 300px;
+    width:300px;
 }
 
+/*This is making the border display when hovering over the project images */
+.project a :hover{
+    border: 3px solid darkblue;
+    height: 350px;
+    width:350px;
+}
 
 footer ul{
     display: flex;
@@ -46,8 +79,21 @@ footer ul{
     list-style: none;
 }
 
+/*media queries controlling the sites responsiveness*/
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #About {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:950px) {
+    #Work {
+        flex-direction:column;
     }
 }
