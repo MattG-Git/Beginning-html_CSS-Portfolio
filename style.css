@@ -6,8 +6,12 @@ header {
     padding: 35px;
     background-color: #161b33;
     color: #a69cac;
-    border-bottom-right-radius: 45%;
+    border-bottom-right-radius: 40%;
     border-bottom-left-radius: 15%;
+}
+
+.name{
+    font-size: 3em;
 }
 
 .logo{
@@ -44,7 +48,8 @@ main{
 
 h2{
     color:#f1dac4;
-
+    font-size: 2em;
+    padding-top: 50px;
 }
 
 
@@ -77,6 +82,11 @@ h4{
     color:#f1dac4;
 }
 
+.language{
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
 .project{
     margin:0 5%;
     color:#a69cac;
@@ -99,7 +109,7 @@ h4{
 footer{
     background-color: #161b33;
     padding: 50px;
-    border-top-left-radius: 45%;
+    border-top-left-radius: 40%;
     border-top-right-radius: 15%;
 }
 
@@ -108,7 +118,14 @@ footer ul{
     justify-content: space-around;
     min-width: 300px;
     list-style: none;
+}
+
+footer ul a{
     color:#a69cac;
+}
+
+footer ul a:hover{
+    color:#f1dac4;
 }
 
 /*media queries controlling the sites responsiveness - row to column when screen size decreases*/
