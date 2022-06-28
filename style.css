@@ -1,3 +1,11 @@
+:root{
+    --dark:#161b33;
+    --dkmed:#0d0c1d;
+    --ltmed:#474973;
+    --tan:#f1dac4;
+    --light:#a69cac;
+}
+
 
 header {
     display: flex;
@@ -73,9 +81,14 @@ h2{
 
 #Work{
     display:flex;
+    flex-wrap:wrap;
     text-align: center;
     min-width: none;
     margin: 25px;
+}
+
+section div{
+    padding-top: 15px;
 }
 
 h4{
@@ -90,6 +103,7 @@ h4{
 .project{
     margin:0 5%;
     color:#a69cac;
+    flex: 1 0 300px;
 }
 
 .projectimg{
@@ -129,6 +143,7 @@ footer ul a:hover{
 }
 
 /*media queries controlling the sites responsiveness - row to column when screen size decreases*/
+
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
@@ -141,8 +156,3 @@ footer ul a:hover{
     }
 }
 
-@media screen and (max-width:950px) {
-    #Work {
-        flex-direction:column;
-    }
-}
